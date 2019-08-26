@@ -1,4 +1,5 @@
 Open main1.py. Before running it, what do you expect this program to do? 
+It prints out greetings and also asks you to input your favourite color.
 
 Now right click on the window and select “Run Python File in Terminal”. Click in the bottom panel, and answer the question. Describe what happened. 
 
