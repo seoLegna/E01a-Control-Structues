@@ -6,9 +6,9 @@ utils.check_version((3,7))          # make sure we are running at least Python 3
 utils.clear()                       # clear the screen
 
 
-print('Greetings!')
-colors = ['red','orange','yellow','green','blue','violet','purple']
-play_again = ''
+print('Greetings!') #prints out Greetings!
+colors = ['red','orange','yellow','green','blue','violet','purple'] #adds values to the variable.
+play_again = ''  #tells the loop to keep playing
 best_count = sys.maxsize            # the biggest number
 while (play_again != 'n' and play_again != 'no'):
     match_color = random.choice(colors)
@@ -27,4 +27,4 @@ while (play_again != 'n' and play_again != 'no'):
         print('This was your best guess so far!')
         best_count = count
     play_again = input("\nWould you like to play again? ").lower().strip()
-print('Thanks for playing!')
+print('Thanks for playing!') #prints out Thanks for playing!

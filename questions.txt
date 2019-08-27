@@ -4,76 +4,96 @@ It prints out greetings and also asks you to input your favourite color.
 Now right click on the window and select “Run Python File in Terminal”. Click in the bottom panel, and answer the question. Describe what happened. 
 
 What do you think the program did with what you typed?
-
+It recorded my response and saved it for further commands in the program.
 
 
 Open main2.py. Before running it, describe how this is different than main1.py. 
+It uses the response that you provided after running it in the terminal and outputs it to the terminal through the print object.
 
 What do you think the color = input() will do? 
+It creates a variable called 'color' and provides it the value that you input into the terminal when prompted after running the program.
 
 Run the program in the terminal and answer the question. Did the program do what you expected?
-
+Yes.
 
 
 Open main3.py. Before running it, describe how this is different than main2.py. 
+main3.py contains an if and an else statement whreas main2.py dosen't.
 
 What is happening on lines 11–14? 
+The program is using if and else statements to tell the user if the input they provided was correct or wrong.
 
 Why are lines 12 and 14 indented? 
+To tell the user if their answer was correct (line 12) and for any other entries other than 'red' tell the user to try again.
 
 Run the program and answer the question. What happens if you don’t capitalize Red? 
+The program has been told to accept only and only 'Red' as the correct answer (in the if statemet) and as python is a case sensitive language it considers the input 'red' as not fulfilling the if statement and immidieatly runs the 'else' statement.
 
 What does this tell you about "color"?
-
+'color' is a variable assigned a value.
 
 
 Open main4.py. Before running it, describe how this is different than main2.py. 
+This time we are using the 'or' operator to accept 'Red' as well as 'red' as the "correct" input.
 
 What problem is this trying to solve? 
+The problem of not accepting 'red' as a "correct" input.
 
 Run the program and answer the question. What happens if you use some other capitalization scheme (i.e., “RED” or “reD“)?
-
+It dosen't work as the if statement only accepts 'Red' or 'red' as the valid input for satisfing the if statement and again python is case sensitive.
 
 
 Open main5.py. What do you expect line 11 to do? 
+It fixes the problem of casing by using 'variable.lower()' to tell the program to take the input that was provided and change the input to all lowercase and then runs the if statement, thus fixing the problem.
 
 What problem is it trying to solve? 
+As python is a case sensitive language, it is trying to remove the case sensitivity issue by using 'variable.lower()' to convet the input to all lower case and then running the if statement.
 
 Run the program and answer the question. What happens if you add spaces before or after the word (i.e., “  RED  “ or “ red”)?
-
+As python is a whitespace sensitive language it fails the if statemet and thus runs the else statement and tells you that your input was wrong.
 
 
 Open main6.py. How is line 11 different than main5.py? 
+The line now contains 'variable.strip()' which tells the program to ignore whitespaces and then run the if statement fixing the problem.
 
 What would you guess .strip() is doing? 
+It's tellig the program to ignore whitespaces and then run the if statement.
 
 Run the program and answer the question. Is there another way of writing “red” that will break this logic?
-
+Yes if you add a puncuation mark like a fullstop then it will break this logic.
 
 
 Open main7.py. Before running this program, how do you expect this to be different than main6.py? 
+This time if the user inputs the color pink as the input to the question the the if statement fails but the program falls back to the elif statemet which is satisfied and thus the terminal outputs 'close' as the ouutput.
 
 What is the purpose of line 11? 
+The line 11 tells the variable itself to read the input given by the user ignoring the case of the input and the whitespaces associated with the input.
 
 Run the program and answer the question.
 
 
 
 Open main8.py. What is the purpose of line 11? 
+Introducing a 'do while' loop into the program.
 
 Why are lines 12–19 indented? 
+As python is a whitespace sensitive language we want the program to know what is and what isn't in the loop. The loop will continue till the if statemnt is not satisfied.
 
 Run the program. What would happen if line 12 were moved before line 11 (and no longer indented)? 
+The loop will no longer function as the line of code that asks the user to input their answer into the terminal is moved out of the loop and thus the program won't work.
 
 Make that change and run the program again. To end any Python program, you can type ctrl-c.
 
 
 
 Open main9.py. What is happening on line 12? 
+A do while loop is created.
 
 What is the purpose of “count”? 
+To count the number of tries it took the user to satisfy the loop thus the number of tries it took the user to satisft the if statement.
 
 What is happening on line 22? 
+The code on line 22 finally tells/prints out the number of times the loop had to repeat itself before the if statement was satisfied by the user or the times the user had to guess before they got the right answer.
 
 Run the program.
 
@@ -83,3 +103,4 @@ Run the program.
 Commit your changes and push them back to the repository. 
 
 Did you do the extra credit?
+Yes, I tried but I could do very little. 
